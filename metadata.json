@@ -1,0 +1,5 @@
+{
+  "name": "PACER Learning System",
+  "description": "A specialized note-taking application implementing the PACER methodology (Procedural, Analogous, Conceptual, Evidence, Reference) to balance information consumption and digestion.",
+  "requestFramePermissions": []
+}
