@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #FDFDFD; /* m3-surface */
+    color: #1f2937;
+  }
+}
+
+/* Scrollbar Clean Up */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Mermaid JS Override to match App Font */
+.mermaid {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
+
+/* Ensure Mermaid Text is legible */
+.mermaid text {
+  font-family: 'Inter', system-ui, sans-serif !important;
+}
