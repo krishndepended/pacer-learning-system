@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { HashRouter } from 'react-router-dom'; // 1. Import HashRouter
 import App from './App';
 import './index.css';
 
@@ -11,6 +12,9 @@ if (!rootElement) {
 const root = ReactDOM.createRoot(rootElement);
 root.render(
   <React.StrictMode>
-    <App />
+    {/* 2. Wrap App in HashRouter for Android compatibility */}
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>
 );
